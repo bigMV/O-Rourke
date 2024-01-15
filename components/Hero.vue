@@ -13,7 +13,7 @@
           non-functional requirements</p>
         <div class="mt-10 flex items-center gap-x-6">
           <a href="/projects"
-            class="rounded-full bg-indigo-600 py-2 px-8 font-regular text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Projects</a>
+            class="rounded-full bg-accent py-2 px-8 font-regular text-white shadow-sm hover:bg-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-iaccent">Projects</a>
           <a href="/contact"
             class="text-sm font-semibold leading-6 text-primary hover:underline decoration-primary underline-offset-4 border py-2 px-4 rounded-full">Contact
             me</a>
