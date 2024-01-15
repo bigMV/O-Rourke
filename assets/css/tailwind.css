@@ -25,7 +25,7 @@
 	}
 
 	p {
-		@apply tracking-wider text-slate-600 font-light text-lg leading-6 font-secondary;
+		@apply tracking-wider text-slate-400 font-light text-lg leading-6 font-secondary;
 }
 
 

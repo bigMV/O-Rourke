@@ -1,22 +1,26 @@
 <template>
   <div class="bg-gray-900 pt-[100px] ">
-    <div class="p-12 lg:p-24 " v-for="project in projects" :key="project.id">
-      <Transition name="fade" appear>
-        <div class="w-2/3 m-auto flex gap-6" v-if="initial">
-          <!-- left info -->
-          <div class="w-2/3 flex flex-col gap-2">
-            <h2 class="text-primary">{{ project.title }}</h2>
-            <p :key="project.id">{{ project.date }}</p>
-            <p :key="project.id">{{ project.description }}</p>
-            <Tag message="Data" class="bg-teal-500 w-1/6" />
-          </div>
-          <!-- right image -->
-          <div class="image w-1/2 bg-slate-500 h-full p-36 rounded hover:">
-            <!-- <img src="" alt=""> -->
-          </div>
-        </div>
-      </Transition>
+    <h1 class="text-primary text-center lg:p-24 p-6">Portfolio</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class=" p-4  " v-for="project in projects" :key="project.id">
+        <Transition name="fade" appear>
+          <div
+            class="w-full m-auto flex flex-col lg:flex-row border rounded-lg border-transparent transition hover:border-teal-500 hover:text-secondary p-4 gap-6"
+            v-if="initial">
+            <!-- left info -->
+            <div class=" flex flex-col gap-2">
+              <div class="flex items-center h-16 ">
+                <img :src="project.logo" alt="Logo" class="w-24  ">
+              </div>
+              <h2 class="text-primary ">{{ project.title }}</h2>
+              <!-- <Tag message="Data" class="bg-teal-500 w-1/2 lg:w-1/3" /> -->
 
+              <p :key="project.id">{{ project.description }}</p>
+
+            </div>
+          </div>
+        </Transition>
+      </div>
     </div>
   </div>
 </template>
@@ -30,31 +34,50 @@ const initial = ref(false)
 
 const projects = [
   {
-    title: 'IBM Data Architect',
+    logo: '/images/logocloud/ibm.png',
+    title: ' Technical Architect',
     date: 'xx-xxxx - xx-xxxx',
     description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
     id: 1,
   },
   {
-    title: 'CERN Data Architect',
+    logo: '/images/logocloud/tata.png',
+    title: 'Head of Infrastructure ',
     date: 'xx-xxxx - xx-xxxx',
     description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
     id: 2,
   },
   {
-    title: 'CITIBANK Data Architect',
+    logo: '/images/logocloud/Atos.png',
+    title: 'Migration Architect',
     date: 'xx-xxxx - xx-xxxx',
     description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
     id: 3,
   },
   {
-    title: 'ESA Data Architect',
+    logo: '/images/logocloud/CERN.png',
+    title: 'Data Architect',
     date: 'xx-xxxx - xx-xxxx',
     description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
-    id: 4,
+    id: 5,
   },
   {
-    title: 'Jaguar-LandRover Data Architect',
+    logo: '/images/logocloud/CITI.png',
+    title: 'Data Architect',
+    date: 'xx-xxxx - xx-xxxx',
+    description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
+    id: 5,
+  },
+  {
+    logo: '/images/logocloud/ESA.png',
+    title: 'Data Architect',
+    date: 'xx-xxxx - xx-xxxx',
+    description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
+    id: 5,
+  },
+  {
+    logo: '/images/logocloud/JLR.png',
+    title: 'Data Architect',
     date: 'xx-xxxx - xx-xxxx',
     description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
     id: 5,
