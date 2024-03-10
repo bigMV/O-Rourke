@@ -31,7 +31,7 @@ module.exports = {
         secondary: [ 'Raleway', 'sans-serif' ]
       },
       backgroundImage: {
-        'hero': `url('images/Data2.jpg')`
+        'hero': `url('images/dataArchitect.webp')`
       },
     },
   },

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
      experimental: {
     viewTransition: true
   },
-    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', 'nuxt-icon'],
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', 'nuxt-icon', "@nuxt/image"],
     devtools: { enabled: true },
     googleFonts: {
     families: {

@@ -9,8 +9,9 @@
             v-if="initial">
             <!-- left info -->
             <div class=" flex flex-col gap-2">
-              <div class="flex items-center h-16 ">
-                <img :src="project.logo" alt="Logo" class="w-24  ">
+              <div class="bg-gray-400 p-2 flex items-center rounded-xl min-h-[150px]">
+                <NuxtImg :src="project.logo" format="avif,webp" alt="Logo" class="w-36 m-auto  " loading="lazy"
+                  placeholder />
               </div>
               <h2 class="text-primary ">{{ project.title }}</h2>
               <!-- <Tag message="Data" class="bg-teal-500 w-1/2 lg:w-1/3" /> -->
@@ -41,7 +42,7 @@ const projects = [
     id: 1,
   },
   {
-    logo: '/images/logocloud/tata.png',
+    logo: '/images/logocloud/tatadark.png',
     title: 'Head of Infrastructure ',
     date: 'xx-xxxx - xx-xxxx',
     description: 'Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.Faucibus commodo massa rhoncus, volutpat.Dignissim sed eget risus enim',
