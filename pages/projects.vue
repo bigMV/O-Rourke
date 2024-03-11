@@ -1,22 +1,21 @@
 <template>
-  <div class="bg-gray-900 pt-[100px] ">
-    <h1 class="text-primary text-center lg:p-24 p-6">Portfolio</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="bg-slate-900 pt-[100px] ">
+    <h1 class="text-primary text-center lg:p-24 p-6">My Portfolio</h1>
+    <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class=" p-4  " v-for="project in projects" :key="project.id">
         <Transition name="fade" appear>
           <div
-            class="w-full m-auto flex flex-col lg:flex-row border rounded-lg border-transparent transition hover:border-teal-500 hover:text-secondary p-4 gap-6"
+            class="w-full m-auto flex flex-col lg:flex-row border rounded-lg border-transparent transition hover:border-teal-500 hover:text-secondary p-4 "
             v-if="initial">
             <!-- left info -->
-            <div class=" flex flex-col gap-2">
-              <div class="bg-gray-400 p-2 flex items-center rounded-xl min-h-[150px]">
-                <NuxtImg :src="project.logo" format="avif,webp" alt="Logo" class="w-36 m-auto  " loading="lazy"
-                  placeholder />
+            <div class=" flex flex-col gap-4">
+              <div class="bg-slate-300 p-2 flex items-center rounded-xl min-h-[150px]">
+                <NuxtImg :src="project.logo" format="webp, avif" alt="Logo" class="w-36 m-auto  " preload />
               </div>
-              <h2 class="text-primary ">{{ project.title }}</h2>
+              <h2 class="text-primary">{{ project.title }}</h2>
               <!-- <Tag message="Data" class="bg-teal-500 w-1/2 lg:w-1/3" /> -->
 
-              <p :key="project.id">{{ project.description }}</p>
+              <p class="text-primary/80" :key="project.id">{{ project.description }}</p>
 
             </div>
           </div>

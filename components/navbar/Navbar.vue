@@ -1,7 +1,7 @@
 <template>
-  <header class="sticky top-0 left-0 z-10 transition"
+  <header class="bg-slate-900 sticky top-0 left-0 z-10 "
     :class="{ 'bg-slate-900 backdrop-blur-md bg-opacity-50': isSticky }">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 " aria-label="Global">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-8  " aria-label="Global">
       <NuxtLink to="/" class="">
         <h1 class="text-xl text-primary font-primary tracking-widest ">O'Rourke</h1>
       </NuxtLink>
@@ -14,7 +14,7 @@
       </div>
       <div class="hidden md:flex md:gap-12">
         <NuxtLink v-for="                  item                   in navigation" :key="item.name" :to="item.href"
-          class="text-md tracking-wider font-secondary font-light leading-6 text-primary decoration-accent underline-offset-4 decoration-2  transition  hover:underline">
+          class="text-xl tracking-wider font-secondary font-medium leading-6 text-primary decoration-accent underline-offset-4 decoration-2  transition  hover:underline">
           {{
       item.name
     }}</NuxtLink>

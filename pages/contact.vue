@@ -15,7 +15,8 @@
     <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:gap-12 lg:px-8 xl:justify-end">
 
       <div class="lg:w-1/3 lg:grow xl:ml-0 m-6">
-        <img class=" bg-gray-50 object-cover" src="/images/Talk.jpg" alt="" />
+        <NuxtImg format="webp, avif" densities="x1 x2" class=" bg-gray-50 object-cover rounded-xl"
+          src="/images/Talk.jpg" alt="Contact Me" :placeholder="[ '100%', '100%', 75, 5 ]" preload />
       </div>
 
       <div class="px-6 lg:contents m-6">
@@ -23,7 +24,8 @@
 
           <h1 class="mt-2  font-bold  text-gray-900 sm:text-4xl">Would you like to discuss a project ?</h1>
           <p class="mt-6 text-xl leading-8 text-gray-700">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-            sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci
+            sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla
+            orci
             at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
           <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-1/2">
 
